@@ -16,6 +16,6 @@ uvloop
 psutil
 langdetect
 MukeshAPI
-
+python-3.11.11
 
 
