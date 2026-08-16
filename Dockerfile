@@ -1,11 +1,21 @@
 FROM python:3.11-slim
 
-RUN apt-get update -y && apt-get upgrade -y
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
 
-COPY . /app/
-WORKDIR /app/
+RUN apt-get update \
+    && apt-get upgrade -y \
+    && rm -rf /var/lib/apt/lists/*
 
-RUN pip3 install --no-cache-dir -U -r requirements.txt
+WORKDIR /app
+
+COPY requirements.txt .
+
+RUN pip3 install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+RUN chmod +x start 2>/dev/null || true
 
 CMD ["bash", "start"]
 
