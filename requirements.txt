@@ -5,7 +5,6 @@ motor
 requests
 dnspython
 tgcrypto==1.2.2
-asyncio
 python-dotenv
 lexica-api
 deep-translator
@@ -16,6 +15,5 @@ uvloop
 psutil
 langdetect
 MukeshAPI
-python-3.11.11
 
 
