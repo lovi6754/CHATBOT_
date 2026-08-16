@@ -74,7 +74,7 @@ async def shayri(client: Client, message: Message):
                         "❍ 𝐒ᴜᴘᴘᴏʀᴛ ❍", url=f"https://t.me/+u7vH0v-mNjk1YmFl"
                     ),
                     InlineKeyboardButton(
-                        "❍ 𝐔ᴘᴅᴀᴛᴇ ❍", url=f"https://t.me/vip_robotz"
+                        "❍ 𝐔ᴘᴅᴀᴛᴇ ❍", url=f"https://t.me/yuvi_botes"
                     ),
                 ]
             ]
